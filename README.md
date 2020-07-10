@@ -30,7 +30,7 @@ Things you may want to cover:
 |------|----|-------|
 |email|string|null: false, unique: true|
 |password|string|null: false|
-|username|string|null: false, index: true, unique: true|
+|name|string|null: false, index: true, unique: true|
 ### Association
 - has_many :members
 - has_many :groups
