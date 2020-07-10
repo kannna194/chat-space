@@ -28,6 +28,6 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|email|string|null: false, uniqe: true|
+|email|string|null: false, unique: true|
 |password|string|null: false|
-|username|string|null: false, index: true, uniqe: true|
+|username|string|null: false, index: true, unique: true|
