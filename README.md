@@ -50,3 +50,6 @@ Things you may want to cover:
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
+### Association
+- has_many :groups, through: :chat
+- has_many :user
