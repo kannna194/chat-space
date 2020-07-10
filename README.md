@@ -35,3 +35,9 @@ Things you may want to cover:
 - has_many :members
 - has_many :groups
 - has_many :chat
+
+## groupsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_name|string|null: false, index: true, unique: true|
