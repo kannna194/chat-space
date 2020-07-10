@@ -24,3 +24,10 @@ Things you may want to cover:
 * ...
 
 # ChatSpace DB設計
+
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false, uniqe: true|
+|password|string|null: false|
+|username|string|null: false, index: true, uniqe: true|
