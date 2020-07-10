@@ -33,7 +33,7 @@ Things you may want to cover:
 |name|string|null: false, index: true, unique: true|
 ### Association
 - has_many :members
-- has_many :groups
+- has_many through: :groups
 - has_many :chat
 
 ## groupsテーブル
