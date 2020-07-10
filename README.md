@@ -63,3 +63,5 @@ Things you may want to cover:
 |image|text||
 |date|datetime|null:false|
 |time|datetime|null:false|
+### Association
+- has_many :groups, through: :members
