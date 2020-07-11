@@ -39,7 +39,7 @@ Things you may want to cover:
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false, index: true, unique: true|
+|name|string|null: false, index: true, unique: true|
 ### Association
 - has_many :members, through: :members
 - has_many :chat
