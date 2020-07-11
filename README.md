@@ -41,7 +41,8 @@ Things you may want to cover:
 |------|----|-------|
 |name|string|null: false, index: true, unique: true|
 ### Association
-- has_many :members, through: :members
+- has_many :users, through: :members
+- has_many :members
 - has_many :chat
 
 ## membersテーブル
