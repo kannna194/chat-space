@@ -64,4 +64,5 @@ Things you may want to cover:
 |date|datetime|null:false|
 |time|datetime|null:false|
 ### Association
-- has_many :groups, through: :members
+- belongs_to :user
+- belongs_to :group
