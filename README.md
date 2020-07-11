@@ -39,7 +39,6 @@ Things you may want to cover:
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
 |group_name|string|null: false, index: true, unique: true|
 ### Association
 - has_many :members, through: :members
