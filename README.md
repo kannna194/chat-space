@@ -61,8 +61,7 @@ Things you may want to cover:
 |group_id|integer|null: false, foreign_key: true|
 |text|text||
 |image|text||
-|date|datetime|null:false|
-|time|datetime|null:false|
+
 ### Association
 - belongs_to :user
 - belongs_to :group
