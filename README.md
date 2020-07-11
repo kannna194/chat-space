@@ -54,7 +54,7 @@ Things you may want to cover:
 - belong_to :user
 - belong_to :group
 
-## chatテーブル
+## chatsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
