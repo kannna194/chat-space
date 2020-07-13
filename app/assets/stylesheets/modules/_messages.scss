@@ -8,11 +8,28 @@
 }
 
 .Main{
-  background-color: #fff;
+  background-color: #fafafa;
   width: calc(100vw - 300px);
+  .Chat-main__group-info {
+    background-color: #fff;
+    border: 1px solid #eee;
+    height: 100px;
+  }
+  .Chat-main__message-list{
+    background-color: #fafafa;
+    height: calc(100% - 190px);
+  }
+  .Chat-main__message-form{
+    background-color: #d2d2d2;
+    height: 90px;
+  }
 }
 
 .Side{
-  background-color: #253141;
+  background-color: #2f3e51;
   width: 300px;
+  .Top-items__name{
+    background-color:#253141 ;
+    height:100px ;
+  }
 }
