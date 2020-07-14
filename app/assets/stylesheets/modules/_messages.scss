@@ -42,6 +42,7 @@
       .Top-items__name{
         color: #fff;
         font-size: 16px;
+        font-weight: bold;
       }
       .Top-items__icons{
         width: 60px;
@@ -55,6 +56,22 @@
         .edit-icon{
           color: #fff;
         }
+      }
+    }
+  }
+  .Side-bar__group-list{
+    padding: 0 20px;
+    height: calc(100vh - 100px);
+    color: #fff;
+    .Groups{
+      box-sizing:border-box;
+      padding: 20px 0 40px;
+      .Group__name{
+        font-size: 15px;
+      }
+      .Group__message{
+        font-size: 11px;
+        margin-top: 5px;
       }
     }
   }
