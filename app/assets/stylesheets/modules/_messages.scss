@@ -28,8 +28,34 @@
 .Side{
   background-color: #2f3e51;
   width: 300px;
-  .Top-items__name{
+  .Side-bar__user-name{
     background-color:#253141 ;
     height:100px ;
+    display: flex;
+    align-items: center;
+    .Top-items{
+      width: 260px;
+      height: 20px;
+      margin: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      .Top-items__name{
+        color: #fff;
+        font-size: 16px;
+      }
+      .Top-items__icons{
+        width: 60px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .sqrare-icon{
+          color: #fff;
+          margin-right: 5px;
+        }
+        .edit-icon{
+          color: #fff;
+        }
+      }
+    }
   }
 }
