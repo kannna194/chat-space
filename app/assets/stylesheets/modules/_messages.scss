@@ -52,7 +52,29 @@
     height: calc(100% - 190px);
     padding: 35px 40px 0;
     overflow: scroll;
-    
+    .Message-posts{
+      margin-bottom: 46px;
+      .Contributor{
+        display: flex;
+        .Contributor__name{
+          color: #333;
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .Contributor__date{
+          color: #999;
+          font-size: 12px;
+          padding-left: 10px;
+        }
+      }
+      .Message{
+        margin-top: 12px;
+        .Message-comment{
+          color: #433a54;
+          font-size: 14px;
+        }
+      }
+    }
   }
   .Chat-main__message-form{
     background-color: #d2d2d2;
