@@ -58,12 +58,12 @@ box-sizing: border-box;
       margin-bottom: 46px;
       .Contributor{
         display: flex;
-        .Contributor__name{
+        &__name{
           color: #333;
           font-size: 16px;
           font-weight: bold;
         }
-        .Contributor__date{
+        &__date{
           color: #999;
           font-size: 12px;
           padding-left: 10px;
