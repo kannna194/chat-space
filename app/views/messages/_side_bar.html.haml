@@ -1,1 +1,13 @@
-＜サイドバー＞
+.Side
+  .Side-bar__user-name
+    .Top-items
+      %p.Top-items__name masa
+      .Top-items__icons
+        = link_to "#" do
+          = icon('far', 'edit', class: 'sqrare-icon')
+        = link_to "#" do
+          = icon('fas', 'cog', class: 'edit-icon')
+  .Side-bar__group-list
+    .Groups
+      %p.Group__name test
+      %p.Group__message test
