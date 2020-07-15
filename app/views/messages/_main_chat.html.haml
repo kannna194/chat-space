@@ -19,3 +19,11 @@
       .Message
         .Message-comment 11111
   .Chat-main__message-form
+    .form
+      %form.new-message
+        .form-box
+          %input{type: "text", class: "input-text", placeholder: "taep a message"}
+          %label{class: "icon-image"}
+            =icon('fas', 'image',class: 'icon')
+            %input{type: "file", class: "image-file"}
+        %input{type: 'submit', class: "Submit-btn",value: "SEND"}

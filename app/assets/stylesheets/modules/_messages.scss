@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 .wrapper{
@@ -12,7 +12,7 @@
   width: calc(100vw - 300px);
   .Chat-main__group-info {
     background-color: #fff;
-    border: 1px solid #eee;
+    border-bottom: 1px solid #eee;
     height: 100px;
     padding: 0 40px;
     display: flex;
@@ -50,7 +50,7 @@
   .Chat-main__message-list{
     background-color: #fafafa;
     height: calc(100% - 190px);
-    padding: 35px 40px 0;
+    padding: 35px 0 0 40px;
     overflow: scroll;
     .Message-posts{
       margin-bottom: 46px;
@@ -79,6 +79,45 @@
   .Chat-main__message-form{
     background-color: #d2d2d2;
     height: 90px;
+    padding: 20px 40px;
+    .form{
+     .new-message{
+        display: flex;
+        justify-content: space-between;
+          .form-box{
+            width: 100%;
+            background-color: #fff;
+            position: relative;
+            .input-text{
+              border: none;
+              height: 50px;
+              width: 100%;
+              padding: 0 45px 0 15px;
+            }
+            .icon-image{
+              height: 50px;
+              position: absolute;
+              right: 10px;
+              .icon{
+                line-height: 50px;
+                font-size: 25px;
+              }
+              .image-file{
+                display: none;
+              }
+            }
+          }
+        .Submit-btn{
+          background-color: #38aef0;
+          border: none;
+          color: #fff;
+          font-size: 16px;
+          height: 50px;
+          margin-left: 15px;
+          padding: 0 30px;
+        }
+      }
+    }
   }
 }
 
