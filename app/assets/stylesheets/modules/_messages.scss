@@ -8,10 +8,12 @@ box-sizing: border-box;
 }
 
 .Main{
+  $white-color:#fff;
+  
   background-color: #fafafa;
   width: calc(100vw - 300px);
   .Chat-main__group-info {
-    background-color: #fff;
+    background-color: $white-color;
     border-bottom: 1px solid #eee;
     height: 100px;
     padding: 0 40px;
@@ -86,7 +88,7 @@ box-sizing: border-box;
         justify-content: space-between;
           .form-box{
             width: 100%;
-            background-color: #fff;
+            background-color: $white-color;
             position: relative;
             .input-text{
               border: none;
@@ -110,7 +112,7 @@ box-sizing: border-box;
         .Submit-btn{
           background-color: #38aef0;
           border: none;
-          color: #fff;
+          color: $white-color;
           font-size: 16px;
           height: 50px;
           margin-left: 15px;
@@ -130,13 +132,17 @@ box-sizing: border-box;
     display: flex;
     align-items: center;
     .Top-items{
+      @mixin font-color(){
+        color: #fff;
+      }
+      @include font-color;
       width: 260px;
       height: 20px;
       margin: 0 20px;
       display: flex;
       justify-content: space-between;
       .Top-items__name{
-        color: #fff;
+        @include font-color;
         font-size: 16px;
         font-weight: bold;
       }
@@ -146,11 +152,11 @@ box-sizing: border-box;
         justify-content: flex-end;
         align-items: center;
         .sqrare-icon{
-          color: #fff;
+          @include font-color;
           margin-right: 5px;
         }
         .edit-icon{
-          color: #fff;
+          @include font-color;
         }
       }
     }
