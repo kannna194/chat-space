@@ -168,10 +168,10 @@ box-sizing: border-box;
     .Groups{
       box-sizing:border-box;
       padding: 20px 0 40px;
-      .Group__name{
+      &__name{
         font-size: 15px;
       }
-      .Group__message{
+      &__message{
         font-size: 11px;
         margin-top: 5px;
       }
