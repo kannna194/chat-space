@@ -4,7 +4,7 @@
       %p.Top-items__name masa
       = current_user.name
       .Top-items__icons
-        = link_to "#" do
+        = link_to new_group_path do
           = icon('far', 'edit', class: 'sqrare-icon')
         = link_to edit_user_path(current_user) do
           = icon('fas', 'cog', class: 'edit-icon')
