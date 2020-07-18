@@ -6,6 +6,7 @@
         %li.Chat-main__member smple
     = link_to 'edit', '#', class: 'edit-btn'
   .Chat-main__message-list
+    = render @messages
     .Message-posts
       .Contributor
         .Contributor__name name 
@@ -20,9 +21,10 @@
         .Message-comment 11111
   .Chat-main__message-form
     = form_with model: [@group, @message], html: {class: "form"}, local: true do |f|
-      .form-box
-        = f.text_field :content, class: 'input-text', placeholder: 'type a message'
-        = f.label :image, class: 'icon-image'
-          =icon('fas', 'image', class: 'icon')
-          = f.file_field :image, class: 'image-file'
-      = f.submit 'Send' , class: 'Submit-btn'
+      .new-message
+        .form-box
+          = f.text_field :content, class: 'input-text', placeholder: 'type a message'
+          = f.label :image, class: 'icon-image' do
+            = icon('fas', 'image', class: 'icon')
+            = f.file_field :image, class: 'image-file'
+        = f.submit 'Send', class: 'Submit-btn'
