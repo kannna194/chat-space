@@ -19,11 +19,10 @@
       .Message
         .Message-comment 11111
   .Chat-main__message-form
-    .form
-      %form.new-message
-        .form-box
-          %input{type: "text", class: "input-text", placeholder: "taep a message"}
-          %label{class: "icon-image"}
-            =icon('fas', 'image',class: 'icon')
-            %input{type: "file", class: "image-file"}
-        %input{type: 'submit', class: "Submit-btn",value: "SEND"}
+    = form_with model: [@group, @message], html: {class: "form"}, local: true do |f|
+      .form-box
+        = f.text_field :content, class: 'input-text', placeholder: 'type a message'
+        = f.label :image, class: 'icon-image'
+          =icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'image-file'
+      = f.submit 'Send' , class: 'Submit-btn'
