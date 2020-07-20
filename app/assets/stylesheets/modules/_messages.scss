@@ -168,10 +168,16 @@ box-sizing: border-box;
     .Groups{
       box-sizing:border-box;
       padding: 20px 0 40px;
+      @mixin a {
+        text-decoration: none;
+        color: #fff;
+      }
       &__name{
+        @include a();
         font-size: 15px;
       }
       &__message{
+        @include a();
         font-size: 11px;
         margin-top: 5px;
       }
