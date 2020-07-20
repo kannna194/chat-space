@@ -9,21 +9,10 @@
             - @group.users.each do |user|
               = user.name
               
-    = link_to 'edit', edit_group_path(current_user), class: 'edit-btn'
+    = link_to 'edit', edit_group_path(@group.id), class: 'edit-btn'
   .Chat-main__message-list
     = render @messages
-    .Message-posts
-      .Contributor
-        .Contributor__name name 
-        .Contributor__date 2020/01/01 0:00:00
-      .Message
-        .Message-comment aaaa
-    .Message-posts
-      .Contributor
-        .Contributor__name name 
-        .Contributor__date 2020/01/01 0:00:00
-      .Message
-        .Message-comment 11111
+
   .Chat-main__message-form
     = form_with model: [@group, @message], html: {class: "form"}, local: true do |f|
       .new-message
