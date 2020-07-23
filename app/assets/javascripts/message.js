@@ -57,6 +57,8 @@ $(function(){
     })
     .done(function(data){
       let html = buildHTML(data);
+      $('.MessageField').append(html);
+      $('form')[0].reset();
     })
   });
 });
