@@ -18,7 +18,7 @@ $(function() {
                 `;
     $("#UserSearchResult").append(html);
   }
-  
+
   $("#UserSearch__field").on("keyup", function() {
     let input = $("#UserSearch__field").val();
    
@@ -43,5 +43,8 @@ $(function() {
     .fail(function() {
       alert("通信エラーです。ユーザーが表示できません。");
     });
+  });
+  $("#UserSearchResult").on("click", ".ChatMember__add", function() {
+    console.log("ok")
   });
 });
