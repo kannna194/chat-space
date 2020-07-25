@@ -2,7 +2,7 @@ $(function(){
   function buildHTML(message){
     if ( message.image ) {
       let html =
-      `<div class="Message-posts">
+      `<div class="Message-posts" data-message-id=${message.id}>
         <div class="Contributor">
           <div class="Contributor__name">
             ${message.user_name}
@@ -22,7 +22,7 @@ $(function(){
       return html;
     } else{
       let html =
-      `<div class="Message-posts">
+      `<div class="Message-posts" data-message-id=${message.id}>
         <div class="Contributor">
           <div class="Contributor__name">
             ${message.user_name}
@@ -68,4 +68,29 @@ $(function(){
       $('.Submit-btn').prop('disabled',false);
     });
   });
+
+  let reloadMessages = function() {
+    let last_message_id = $('.Message-posts:last').data("message-id") || 0;
+    $.ajax({
+      url: "/groups/:group_id/api/messages",
+      type: 'get',
+      dataType: 'json',
+      data: {id: last_message_id}
+    })
+    .done(function(messages) {
+      if (messages.length !== 0) {
+        let insertHTML = '';
+        $.each(messages, function(i, message) {
+          insertHTML += buildHTML(message)
+        });
+        $('.MessageField').append(insertHTML);
+      }
+    })
+    .fail(function() {
+      alert('error');
+    });
+  };
+
+  setInterval(reloadMessages, 7000);
+
 });
